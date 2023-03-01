@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision_making</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <pre>const Calculator = (A, B, C) => 
+        {
+            switch (A)
+            {
+              case "+": return B+C;
+              
+              case "-": return B-C;
+              
+              case "/": return B/C;
+              
+              case "*": return B*C;
+                        
+            }
+            
+            
+        };
+        </pre>
+
+    <h1>Check whether the condition is fulfilled or not?</h1>
+    <pre>
+        const Check_divisibility = (N) => {
+            if (N%9===0 && N%6===0) {
+              return "Divisible by both";
+            }
+            else {
+              return "Not Divisible by both"
+            }
+        
+            
+        };</pre>
+
+    <h1>Eligible Voter</h1>
+    <pre>const isEligible = (a) => {
+        if (a>=18) {
+          return "Eligible for Voting";
+        }
+        else {
+          return "Not Eligible for Voting" ;
+        }
+       
+      };</pre>
+
+    <h1>Find Relation</h1>
+    <pre>const findRelation = (x,y) => {
+        if (x<y){
+          return x+" is smaller than "+y
+        }
+        else if (x>y){
+          return x+" is greater than "+y
+        }
+        else {
+          return x+" is equal to "+y
+        }
+    };</pre>
+
+    <h1>Find Grades</h1>
+    <pre>const findGrades = (a) => {
+        switch (true){
+         case a>=41: return "A";
+         case a>=31: return "B";
+         case a>=21: return "C";
+         case a>=11: return "D";
+         case a<=10: return "E";
+       }
+   };
+   </pre>
+
+    <h1>Get Value</h1>
+    <pre>const getValue = (a) => {
+        if (a=="p" | a=="P"){
+          return "PrepBytes";
+        }
+        else if (a=="z" | a=="Z"){
+          return "Zenith";
+        }
+        else if (a=="e" | a=="E"){
+          return "Expert Coder";
+        }
+        else {
+          return "Data Structure";
+        }
+    };</pre>
+
+    <h1>Find the maximum out of three numbers.</h1>
+    <pre>
+        const Max_out_of_three = (A,B,C) => {
+            if(A===B & B===C){
+              return "-1";
+            }
+            else if (A>B & A>C){
+              return A;
+            }
+             else if (B>A & B>C){
+              return B;
+            }
+             else {
+              return C;
+            }
+        
+        
+        };
+        </pre>
+
+    <h1>Second Smallest</h1>
+    <pre>const findSndSmallest = (x,y,z) => {
+  
+        if ((x < y && y < z) || (x>y && y>z)){
+        return y;
+      }
+      else if ((y < x && x < z) || (y>x && x>z)){
+        return x;
+      }
+    
+      else{
+        return z;
+      }
+     
+  };</pre>
+
+
+    <h1>Check whether the triangle is Acute or Obtuse</h1>
+    <pre>const Triangle_Check = (A,B,C) => {
+        if (A<90 && B<90 && C<90){
+          return "acute";
+        }
+        else{
+          return "obtuse";
+        }
+    
+        
+    };
+    </pre>
+
+
+</body>
+</html>
